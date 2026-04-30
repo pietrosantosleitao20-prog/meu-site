@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Site</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f0f0f;
+    color: white;
+}
+
+/* MENU */
+header {
+    background: #111;
+    padding: 15px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: #ccc;
+}
+
+/* BOTÃO */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: red;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* SERVIÇOS */
+.servicos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* CONTATO */
+.contato {
+    text-align: center;
+    padding: 40px;
+}
+
+input, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: red;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+    background: #111;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+Meu Site
+</header>
+
+<section class="hero">
+    <h1>Criação de Sites Profissionais</h1>
+    <p>Eu faço sites modernos para negócios e pessoas</p>
+    <a href="#contato" class="btn">Falar comigo</a>
+</section>
+
+<section class="servicos">
+    <div class="card">
+        <h3>Sites</h3>
+        <p>Sites rápidos e modernos</p>
+    </div>
+    <div class="card">
+        <h3>Design</h3>
+        <p>Visual bonito e profissional</p>
+    </div>
+    <div class="card">
+        <h3>Suporte</h3>
+        <p>Ajuda sempre que precisar</p>
+    </div>
+</section>
+
+<section id="contato" class="contato">
+    <h2>Contato</h2>
+    <input type="text" placeholder="Seu nome">
+    <br>
+    <input type="email" placeholder="Seu email">
+    <br>
+    <textarea placeholder="Sua mensagem"></textarea>
+    <br>
+    <button onclick="enviar()">Enviar</button>
+</section>
+
+<footer>
+© 2026 - Meu Site
+</footer>
+
+<script>
+function enviar() {
+    alert("Mensagem enviada! (simulação)");
+}
+</script>
+
+</body>
+</html>
